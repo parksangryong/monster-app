@@ -1,0 +1,91 @@
+#header {
+  height: 80px;
+  border-bottom: 20px solid whitesmoke;
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 1.3em;
+}
+
+.time {
+  float: right;
+  line-height: 80px;
+  margin-right: 5%;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.time:hover {
+  color: silver;
+}
+
+.pobtns {
+  margin-top: 15px;
+  float: left;
+  width: 15%;
+  height: 50px;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.pobtn {
+  float: left;
+  background-image: url("../images/포켓몬볼.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.pobtns > span {
+  float: left;
+  line-height: 50px;
+  margin-left: 3%;
+  font-size: 0.8em;
+}
+
+.dibtns {
+  cursor: pointer;
+  margin-top: 15px;
+  float: left;
+  width: 15%;
+  height: 50px;
+  margin-left: 5%;
+}
+.dibtn {
+  float: left;
+  background-image: url("../images/디지바이스.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.dibtns > span {
+  float: left;
+  line-height: 50px;
+  margin-left: 3%;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 869px) {
+  .pobtns span,
+  .dibtns span {
+    color: 0.2em;
+  }
+  #header i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 616px) {
+  .pobtns span,
+  .dibtns span {
+    color: 0.2em;
+    color: black;
+  }
+  .time {
+    font-size: 0.6em;
+  }
+}

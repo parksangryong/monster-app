@@ -1,0 +1,48 @@
+#poket {
+  width: 15%;
+  height: 200px;
+  margin-left: 4.15%;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.poket-imgae {
+  width: 100%;
+  height: 160px;
+  background-color: pink;
+}
+.poket-imgae img {
+  width: 100%;
+  height: 100%;
+}
+.poket-name {
+  width: 100%;
+  height: 20px;
+  background-color: aliceblue;
+  padding-left: 10px;
+}
+.poket-name span {
+  font-size: 0.9em !important;
+}
+.poket-id {
+  width: 100%;
+  height: 20px;
+  font-size: 0.9em;
+  background-color: aliceblue;
+  padding-left: 10px;
+}
+
+#poket > button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  background-color: palevioletred;
+  color: white;
+}

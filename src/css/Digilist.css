@@ -1,0 +1,56 @@
+#digilist {
+  height: auto;
+  width: 100%;
+
+  background: linear-gradient(to right, rgb(255, 133, 133), 5%, skyblue);
+}
+
+#digilist .active {
+  color: blue;
+}
+
+.diopt {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  border-bottom: 5px double whitesmoke;
+}
+.diopt input {
+  width: 30%;
+  height: 30px;
+  margin-top: 5px;
+  font-size: 1.1em;
+}
+.diopt .pagination {
+  width: 100%;
+  height: 20px;
+}
+.diopt #pagenum {
+  margin-right: 1.5%;
+  cursor: pointer;
+}
+.diopt > button {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  border: none;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background: linear-gradient(to top, white, skyblue);
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.diopt > button:hover {
+  background: linear-gradient(to top, rgb(246, 255, 187), blue);
+  color: yellow;
+}
+
+.prev {
+  margin-right: 1.5%;
+}
+.prev,
+.next {
+  cursor: pointer;
+}

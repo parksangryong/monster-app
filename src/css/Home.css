@@ -1,0 +1,47 @@
+#home {
+  height: 600px;
+  width: 100%;
+  background-color: none;
+}
+
+.movepoket,
+.movedigit {
+  width: 41%;
+  margin-left: 6%;
+  margin-top: 50px;
+  height: 500px;
+  float: left;
+  cursor: pointer;
+}
+
+.movepoket {
+  background-image: url("../images/포켓몬볼.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.movepoket:hover {
+  background-image: url("../images/포켓몬볼-2.png");
+  scale: 1.1;
+}
+
+.movedigit {
+  background-image: url("../images/디지바이스.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.movedigit:hover {
+  background-image: url("../images/디지바이스-2.png");
+  scale: 1.1;
+}
+
+@media screen and (max-width: 616px) {
+  .movepoket,
+  .movedigit {
+    width: 90%;
+    height: 250px;
+  }
+}

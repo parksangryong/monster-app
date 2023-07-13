@@ -1,6 +1,124 @@
-#digi-info {
+#digit-info {
   height: 600px;
   width: 100%;
-
+  padding-top: 50px;
   background: linear-gradient(to right, rgb(255, 133, 133), 5%, skyblue);
+}
+
+#digit-center {
+  width: 80%;
+  height: 550px;
+  margin-left: 10%;
+  background-color: rgb(222, 246, 255);
+  position: relative;
+}
+
+.digit-info-imgs {
+  margin-top: 100px;
+  width: 40%;
+  float: left;
+  margin-left: 7%;
+}
+
+.digit-info-imgs > img {
+  width: 85%;
+  height: 350px;
+}
+
+.digit-txt {
+  float: right;
+  width: 40%;
+  margin-top: 60px;
+  margin-right: 7%;
+}
+
+.digit-info-name {
+  width: 100%;
+  height: 40px;
+}
+
+.digit-info-id {
+  width: 100%;
+  height: 40px;
+}
+
+.digit-info-type {
+  width: 100%;
+  height: 40px;
+}
+
+.digit-info-pr {
+  width: 100%;
+  height: 40px;
+}
+
+.digit-info-next {
+  width: 100%;
+  height: 40px;
+}
+
+.digit-info-next select,
+.digit-info-pr select {
+  width: 70%;
+}
+
+.digit-info-detail {
+  width: 100%;
+  height: auto;
+}
+
+.sp1 {
+  color: brown;
+  width: 30%;
+  float: left;
+}
+.sp2 {
+  font-weight: 500;
+  width: 60%;
+  float: left;
+}
+
+.sp5 {
+  width: 20%;
+  color: brown;
+  float: left;
+  height: 40px;
+}
+.sp6 {
+  width: 80%;
+  float: right;
+  font-size: 0.8em;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 910px) {
+  #digit-info {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  #digit-info {
+    font-size: 0.7em;
+    height: 850px;
+  }
+  .digit-info-imgs {
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+    float: both;
+  }
+  .digit-txt {
+    width: 80%;
+    float: both;
+    margin-right: 10%;
+  }
+  #digit-center {
+    height: 800px;
+  }
+
+  .digit-info-imgs img {
+    height: 100%;
+  }
 }

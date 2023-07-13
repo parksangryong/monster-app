@@ -2,9 +2,13 @@
 import "../css/Digit.css";
 
 function Digit(props) {
+  const digisearch = () => {
+    window.location.href = "/digimon/info?query=" + props.id;
+  };
+
   return (
     <div id="digit">
-      <div className="digit-imgae">
+      <div className="digit-imgae" onClick={digisearch}>
         <img src={props.dimg} />
       </div>
       <div className="digit-name">
@@ -13,7 +17,6 @@ function Digit(props) {
       <div className="digit-id">
         <span>id :</span> <span>{props.id}</span>
       </div>
-      detail = {props.detail}
     </div>
   );
 }

@@ -24,9 +24,13 @@ function Poket(props) {
     setShinyimg(result.data.sprites.front_shiny);
   };
 
+  const poksearch = () => {
+    window.location.href = "/poketmon/info?query=" + poketid;
+  };
+
   return (
     <div id="poket">
-      <div className="poket-imgae">
+      <div className="poket-imgae" onClick={poksearch}>
         {change ? <img src={poketimg} /> : <img src={shinyimg} />}
       </div>
       <div className="poket-name">

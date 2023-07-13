@@ -1,5 +1,128 @@
 #poket-info {
-  height: 600px;
-  width: 100%;
+  height: 500px;
+  width: auto;
   background: linear-gradient(to left, skyblue, 15%, rgb(255, 133, 133));
+  padding-top: 50px;
+}
+
+#poket-center {
+  width: 80%;
+  height: 450px;
+  margin-left: 10%;
+  background-color: pink;
+  position: relative;
+}
+
+#poket-center button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: palevioletred;
+  color: white;
+}
+
+.poket-info-imgs {
+  position: relative;
+  margin-top: 50px;
+  width: 40%;
+  float: left;
+  margin-left: 7%;
+}
+
+.poket-info-imgs > img {
+  width: 85%;
+  height: 350px;
+}
+
+.poket-txt {
+  float: right;
+  width: 40%;
+  margin-top: 60px;
+  margin-right: 7%;
+}
+
+.poket-info-name {
+  width: 100%;
+  height: 40px;
+}
+
+.poket-info-id {
+  width: 100%;
+  height: 40px;
+}
+
+.poket-info-wh {
+  width: 100%;
+  height: 40px;
+}
+
+.poket-info-abil {
+  width: 100%;
+  height: 40px;
+}
+
+.poket-info-stat {
+  width: 100%;
+  height: 120px;
+}
+
+.poket-info-type {
+  width: 100%;
+  height: 40px;
+}
+
+.sp1 {
+  color: brown;
+  width: 30%;
+  float: left;
+}
+.sp2 {
+  font-weight: 500;
+  width: 60%;
+  float: left;
+}
+
+.sp3 {
+  width: 70%;
+  float: left;
+}
+
+.sp4 {
+  width: 30%;
+  float: left;
+}
+
+@media screen and (max-width: 910px) {
+  #poket-info {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  #poket-info {
+    font-size: 0.7em;
+    height: 700px;
+  }
+  .poket-info-imgs {
+    width: 100%;
+    height: 200px;
+    float: both;
+  }
+  .poket-txt {
+    width: 80%;
+    float: both;
+    margin-right: 10%;
+  }
+  #poket-center {
+    height: 650px;
+  }
+
+  .poket-info-imgs img {
+    height: 100%;
+  }
 }

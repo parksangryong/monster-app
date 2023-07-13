@@ -39,7 +39,7 @@ function Poketlist() {
     ));
 
   const poksearch = () => {
-    window.location.href = "/poketmon/info/query?" + search;
+    window.location.href = "/poketmon/info?query=" + search;
   };
 
   const getPagenumber = () => {

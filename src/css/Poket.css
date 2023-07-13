@@ -12,6 +12,7 @@
   width: 100%;
   height: 160px;
   background-color: pink;
+  cursor: help;
 }
 .poket-imgae img {
   width: 100%;
@@ -45,4 +46,25 @@
   cursor: pointer;
   background-color: palevioletred;
   color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  #poket {
+    width: 20%;
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  #poket {
+    width: 30%;
+    margin-left: 2.5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #poket {
+    width: 45%;
+    margin-left: 3.3%;
+  }
 }

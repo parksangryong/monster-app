@@ -41,7 +41,7 @@ function Digilist() {
   ));
 
   const digisearch = () => {
-    window.location.href = "/digimon/info/query?" + search;
+    window.location.href = "/digimon/info?query=" + search;
   };
 
   const getPagenumber = () => {

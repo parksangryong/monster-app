@@ -89,3 +89,14 @@
     font-size: 0.6em;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .pobtns,
+  .dibtns {
+    width: 5%;
+    height: 20px;
+  }
+  .time {
+    font-size: 0.6em;
+  }
+}

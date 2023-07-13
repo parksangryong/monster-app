@@ -94,7 +94,7 @@ function DigimonInfo() {
           </div>
 
           <div className="digit-info-pr">
-            <div className="sp1">prio :</div>
+            <div className="sp1">진화 전 :</div>
             <div className="sp2">
               <select onChange={moveInfo}>
                 <option value="">default</option>
@@ -104,7 +104,7 @@ function DigimonInfo() {
           </div>
 
           <div className="digit-info-next">
-            <div className="sp1">next :</div>
+            <div className="sp1">진화 후 :</div>
             <div className="sp2">
               <select onChange={moveInfo}>
                 <option value="">default</option>

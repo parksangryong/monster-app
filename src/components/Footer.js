@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div id="footer">
       <div>&copy; Ryong Project : Poketmon & Digimon</div>
-      <button>Box</button>
+      <button onClick={() => (window.location.href = "/box")}>Box</button>
     </div>
   );
 }

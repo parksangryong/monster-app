@@ -7,6 +7,7 @@ import Poketlist from "./components/Poketlist";
 import Home from "./components/Home";
 import DigimonInfo from "./components/DigimonInfo";
 import PoketInfo from "./components/PoketInfo";
+import Box from "./components/Box";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/digimon/info/*" element={<DigimonInfo />} />
           <Route path="/poketmon" element={<Poketlist />} />
           <Route path="/poketmon/info/*" element={<PoketInfo />} />
+          <Route path="/box" element={<Box />} />
         </Routes>
       </BrowserRouter>
       <Footer />

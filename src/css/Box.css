@@ -1,0 +1,22 @@
+#box {
+  height: 550px;
+  width: auto;
+  background: linear-gradient(to left, skyblue, 50%, rgb(255, 133, 133));
+  padding-top: 50px;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.poketbox {
+  width: 45%;
+  background-color: pink;
+  height: 500px;
+  float: left;
+}
+.digitbox {
+  width: 45%;
+  background-color: rgb(170, 219, 238);
+  height: 500px;
+  float: right;
+}

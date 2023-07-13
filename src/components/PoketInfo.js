@@ -50,6 +50,19 @@ function PoketInfo() {
     <span key={index}>{data.type.name} &nbsp;</span>
   ));
 
+  const pokprev = () => {
+    if (poket.id === 1) {
+      return;
+    }
+    window.location.href = "/poketmon/info?query=" + (poket.id - 1);
+  };
+  const poknext = () => {
+    if (poket.id === 1010) {
+      return;
+    }
+    window.location.href = "/poketmon/info?query=" + (poket.id + 1);
+  };
+
   return (
     <div id="poket-info">
       <div id="poket-center">
@@ -87,6 +100,21 @@ function PoketInfo() {
         </div>
         <button onClick={() => setChange(!change)}>C</button>
       </div>
+      {poket.id === 1 ? (
+        ""
+      ) : (
+        <button className="prev2" onClick={pokprev}>
+          &lt;
+        </button>
+      )}
+
+      {poket.id === 1010 ? (
+        ""
+      ) : (
+        <button className="next2" onClick={poknext}>
+          &gt;
+        </button>
+      )}
     </div>
   );
 }

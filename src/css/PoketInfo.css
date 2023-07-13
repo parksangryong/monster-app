@@ -3,6 +3,7 @@
   width: auto;
   background: linear-gradient(to left, skyblue, 15%, rgb(255, 133, 133));
   padding-top: 50px;
+  position: relative;
 }
 
 #poket-center {
@@ -125,4 +126,28 @@
   .poket-info-imgs img {
     height: 100%;
   }
+}
+
+.prev2 {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.next2 {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
 }

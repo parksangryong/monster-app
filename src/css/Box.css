@@ -1,5 +1,5 @@
 #box {
-  height: 550px;
+  height: auto;
   width: auto;
   background: linear-gradient(to left, skyblue, 50%, rgb(255, 133, 133));
   padding-top: 50px;
@@ -9,14 +9,100 @@
 }
 
 .poketbox {
-  width: 45%;
-  background-color: pink;
-  height: 500px;
+  position: relative;
+  width: 100%;
+  background-color: rgb(253, 225, 229);
+  height: auto;
+  margin-bottom: 40px;
+  padding-bottom: 3%;
+}
+
+.poketbox > button {
+  border: 2px solid whitesmoke;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background-color: palevioletred;
+  color: white;
+  cursor: pointer;
+}
+
+#box-poket {
+  width: 29%;
+  margin-left: 2.5%;
+  margin-top: 3%;
+  height: 40%;
+  display: inline-block;
+  border: 5px double palevioletred;
+  position: relative;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+#box-poket:hover {
+  animation: ops 3s linear infinite;
+}
+
+@keyframes ops {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.box-image {
+  margin-left: 25%;
+  width: 50%;
+  height: 80%;
   float: left;
 }
-.digitbox {
-  width: 45%;
-  background-color: rgb(170, 219, 238);
-  height: 500px;
-  float: right;
+
+.box-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-ei {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 3;
+  color: black;
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box-name {
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #box-poket {
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #box-poket {
+    width: 90%;
+  }
 }

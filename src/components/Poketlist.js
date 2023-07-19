@@ -24,7 +24,7 @@ function Poketlist() {
       const result = await axios.get(
         `https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1010`
       );
-      //console.log(result.data.results);
+      console.log(result.data.results);
       setPolist(result.data.results);
 
       //console.log(polist.slice(page, size));
